@@ -1,5 +1,5 @@
 FROM maven AS build
-RUN git clone https://github.com/ganeshmerwade/Java-project-2.git
+RUN git clone https://github.com/ganeshmerwade/javawebapp_withtest.git
 WORKDIR /Java-project-2
 RUN mvn clean package
 
