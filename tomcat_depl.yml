@@ -31,7 +31,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: webapp
+    matchLabels:  
+      app: webapp
   ports:
     - protocol: TCP
       port: 80

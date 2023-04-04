@@ -6,4 +6,4 @@ CMD [ "/bin/bash" ]
 
 FROM tomcat AS deployment
 COPY --from=build /javawebapp_withtest/target/*.war /usr/local/tomcat/webapps/
-CMD [ "catalina.sh" "run" ]
+CMD [ "catalina.sh", "run" ]
