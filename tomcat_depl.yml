@@ -25,7 +25,9 @@ kind: Service
 metadata:
   name: my-service
   labels: 
-    app: webapp
+    matchLabels:
+      app: webapp
+    
 spec:
   type: NodePort
   selector:
