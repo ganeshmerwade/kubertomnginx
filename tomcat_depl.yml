@@ -16,7 +16,7 @@ spec:
         spec:
            containers:
             - name: tomcat
-              image: ganeshmerwade/tomcat:v1
+              image: ganeshmerwade/tomcat:v2
               ports:
               - containerPort: 8080                 
 ---
