@@ -1,4 +1,4 @@
-FROM maven AS build
+FROM maven:3.8.6-openjdk-11 AS build
 RUN git clone https://github.com/ganeshmerwade/javawebapp_withtest.git
 WORKDIR /javawebapp_withtest
 RUN mvn clean package
